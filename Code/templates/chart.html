@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bar Chart</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="chart"></div>
+
+    <script>
+        var chart_data = {{ chart_json|safe }};
+
+        Plotly.newPlot('chart', chart_data.data, chart_data.layout);
+    </script>
+</body>
+</html>
