@@ -24,13 +24,6 @@ def index():
         cluster_number = flask.request.form['cluster_number']
         print(cluster_number)
         data = [go.Bar(x=['A', 'B', 'C'], y=[1, 2, 3])]
-    #layout = go.Layout(title='Bar Chart')
-    layout = go.Layout(title = cluster_number)
-    fig = go.Figure(data=data, layout=layout)
-
-    # Convert the chart into JSON
-    chart_json = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-
     # Render the HTML template with the JSON data
     return flask.render_template('chart.html', chart_json=chart_json)
         # return '<img src="wallpaper.jpg">'
