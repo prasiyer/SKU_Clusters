@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bar Chart</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div id="chart1" class="col-md-6"></div>
+        <div id="chart2" class="col-md-6"></div>
+    </div>
+
+    <script>
+        var chart_data1 = {{ chart_json1|safe }};
+        var chart_data2 = {{ chart_json2|safe }};
+
+        Plotly.newPlot('chart1', chart_data1.data, chart_data1.layout);
+        Plotly.newPlot('chart2', chart_data2.data, chart_data2.layout);
+    </script>
+</body>
+</html>
