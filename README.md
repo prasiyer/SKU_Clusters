@@ -19,7 +19,7 @@ This project demonstrates:
 4) Use of CRISP-DM steps
 
 ## File Descriptions ##
-The repository consists of 2 main folders -- Data & Code
+The repository consists of 2 main folders -- Data & Code </br>
 The Data folder has:
 1) cmd_attributes_v3_upload.csv: This file has the pre-processed input data
 
@@ -31,7 +31,7 @@ The Code folder has:
 5) index.html & chart_4.html: HTML templates used in the webapp
 
 Steps for running the python script:
-1) cd SKU clusters
+1) cd SKU_Clusters ## go to the location of the repository </br>
 2) python ./Code/CMD_Clustering_Deploy_Step6.py
 
 ## Acknowledgements ##
