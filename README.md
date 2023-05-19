@@ -29,6 +29,7 @@ The Code folder has:
 3) cmd_data_output.csv: csv file with cluster information and is used in the python script
 4) CMD_Clustering_Deploy_Step6.py: This is a python script for a web-app showing details about the clusters
 5) index.html & chart_4.html: HTML templates used in the webapp
+6) Clustering_Project.pdf: Document describing the overall approach for clustering
 
 Steps for running the python script:
 1) cd SKU_Clusters ## go to the location of the repository </br>
